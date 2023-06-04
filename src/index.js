@@ -268,7 +268,7 @@ document.addEventListener("click", function (event) {
     }
   } else if (ele === "=") {
     calculate();
-  } else {
+  } else if(ele!=null){
     // let s = answer.innerHTML;
     let s = answer.getAttribute("data-value");
     if (s === "0") {

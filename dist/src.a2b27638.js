@@ -414,7 +414,7 @@ document.addEventListener("click", function (event) {
     }
   } else if (ele === "=") {
     calculate();
-  } else {
+  } else if (ele != null) {
     // let s = answer.innerHTML;
     var _s = answer.getAttribute("data-value");
     if (_s === "0") {
@@ -452,7 +452,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43263" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44879" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
